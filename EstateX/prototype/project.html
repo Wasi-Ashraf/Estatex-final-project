@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstateX - Real Estate & Rental Platform</title>
+    <meta name="description" content="Discover affordable homes, apartments, shops and agricultural properties across Pakistan with EstateX.">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+
+<header class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo"><span>EX</span> EstateX</a>
+
+        <div class="nav-menu" id="navMenu">
+            <nav class="nav-links">
+                <a href="" class="active">Home</a>
+                <a href="#properties" onclick="filterByPurpose('sale')">Buy</a>
+                <a href="#properties" onclick="filterByPurpose('rent')">Rent</a>
+                <a href="#properties" onclick="filterCategory('all')">Properties</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="contact" class="login">Sign In</a>
+                <a href="contact" class="btn small"><i class="fa-solid fa-plus"></i> Add Property</a>
+            </div>
+        </div>
+
+        <button class="menu-btn" id="menuBtn" onclick="menu()" aria-label="Toggle navigation menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <span class="badge">Trusted real estate partner</span>
+
+           
+            <h1 class="rotator">
+                <span class="active">Find a Place You'll Love to Live.</span>
+                <span>Discover Your Perfect Property.</span>
+                <span>Your Dream Property Starts Here.</span>
+            </h1>
+
+            <p>
+                Discover affordable homes, modern apartments, commercial shops, and agricultural properties&mdash;all in one place.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="properties" class="btn" onclick="filterCategory('all')">Explore Properties</a>
+                <a href="contact" class="btn btn-light">List Your Property</a>
+            </div>
+
+            
+            <div class="stats">
+                <div><strong>2500+</strong><span>Properties</span></div>
+                <div><strong>1200+</strong><span>Happy Clients</span></div>
+                <div><strong>25+</strong><span>Cities</span></div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80" alt="Modern luxury house">
+        </div>
+    </div>
+</section>
+
+<!-- SEARCH BOX  -->
+<div class="search-wrap">
+            <div class="search-box">
+                <div class="search-row">
+                    <div class="field-box">
+                        <i class="fa-solid fa-tag"></i>
+                        <select class="field" id="searchPurpose" aria-label="Purpose">
+                            <option value="all">Buy or Rent</option>
+                            <option value="sale">Buy</option>
+                            <option value="rent">Rent</option>
+                        </select>
+                    </div>
+
+                    <div class="field-box">
+                        <i class="fa-solid fa-city"></i>
+                        <select class="field" id="searchCity" aria-label="City">
+                            <option value="all">All Cities</option>
+                            <option value="Islamabad">Islamabad</option>
+                            <option value="Lahore">Lahore</option>
+                            <option value="Rawalpindi">Rawalpindi</option>
+                            <option value="Bhakkar">Bhakkar</option>
+                            <option value="Karachi">Karachi</option>
+                            <option value="Faisalabad">Faisalabad</option>
+                        </select>
+                    </div>
+
+                    <div class="field-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" class="field" id="searchKeyword" placeholder="Location (e.g., DHA, Bahria)" aria-label="Location">
+                    </div>
+
+                    <div class="field-box">
+                        <i class="fa-solid fa-house"></i>
+                        <select class="field" id="searchType" aria-label="Property type">
+                            <option value="all">All Properties</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="shop">Shop</option>
+                            <option value="land">Agricultural Land</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="search-row">
+                    <div class="field-box">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                        <select class="field" id="searchArea" aria-label="Area">
+                            <option value="all">Any Area</option>
+                            <option value="3 Marla">3 Marla</option>
+                            <option value="5 Marla">5 Marla</option>
+                            <option value="7 Marla">7 Marla</option>
+                            <option value="10 Marla">10 Marla</option>
+                            <option value="5 Acres">5 Acres</option>
+                        </select>
+                    </div>
+
+                    <div class="field-box">
+                        <i class="fa-solid fa-bed"></i>
+                        <select class="field" id="searchBeds" aria-label="Bedrooms">
+                            <option value="all">Any Bedrooms</option>
+                            <option value="1">1 Bedroom</option>
+                            <option value="2">2 Bedrooms</option>
+                            <option value="3">3 Bedrooms</option>
+                            <option value="4">4+ Bedrooms</option>
+                        </select>
+                    </div>
+
+                    <div class="field-box">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <select class="field" id="searchPrice" aria-label="Price">
+                            <option value="all">Any Price</option>
+                            <option value="under-20">Under 20 Lac</option>
+                            <option value="20-50">20 &ndash; 50 Lac</option>
+                            <option value="50-100">50 Lac &ndash; 1 Crore</option>
+                            <option value="above-100">Above 1 Crore</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn" onclick="searchProperties()">
+                        <i class="fa-solid fa-magnifying-glass"></i> Search Properties
+                    </button>
+                </div>
+            </div>
+</div>
+
+<!-- PROPERTY SECTION -->
+<section class="properties-section" id="properties">
+    <div class="section-container">
+        <div class="section-heading">
+            <div>
+                <span class="section-label">Featured properties</span>
+                <h2>Explore Properties</h2>
+                <p>Find the right property that matches your needs and budget.</p>
+            </div>
+        </div>
+
+        <!-- PROPERTY CATEGORIES -->
+        <div class="categories">
+            <button type="button" class="category active-category" data-cat="all" onclick="filterCategory('all')">All Properties</button>
+            <button type="button" class="category" data-cat="house" onclick="filterCategory('house')">Houses</button>
+            <button type="button" class="category" data-cat="apartment" onclick="filterCategory('apartment')">Apartments</button>
+            <button type="button" class="category" data-cat="shop" onclick="filterCategory('shop')">Shops</button>
+            <button type="button" class="category" data-cat="land" onclick="filterCategory('land')">Agricultural Land</button>
+        </div>
+
+        <!-- PROPERTY CARDS -->
+        <div class="property-grid" id="propertyGrid">
+
+            <!-- CARD 1 -->
+            <article class="property-card" data-category="house" data-purpose="sale" data-city="Lahore" data-beds="4" data-price="9500000">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Modern family house in DHA Lahore" loading="lazy">
+                    <span class="property-badge">For Sale</span>
+                    <button class="favorite" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+                    <div class="image-price"><strong>PKR 95 Lac</strong></div>
+                </div>
+
+                <div class="property-info">
+                    <div class="property-type">House</div>
+                    <h3>Modern Family House</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> DHA Phase 6, Lahore</p>
+
+                    <div class="property-details">
+                        <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 10 Marla</span>
+                    </div>
+
+                    <div class="property-footer">
+                        <a href="#contact" class="btn btn-light small">View Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="property-card" data-category="apartment" data-purpose="rent" data-city="Islamabad" data-beds="2" data-price="30000">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Luxury city apartment in Bahria Town" loading="lazy">
+                    <span class="property-badge rent-badge">For Rent</span>
+                    <button class="favorite" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+                    <div class="image-price"><strong>PKR 30,000</strong> <span>/ Month</span></div>
+                </div>
+                
+                <div class="property-info">
+                    <div class="property-type">Apartment</div>
+                    <h3>Luxury City Apartment</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Bahria Town, Islamabad</p>
+
+                    <div class="property-details">
+                        <span><i class="fa-solid fa-bed"></i> 2 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 5 Marla</span>
+                    </div>
+
+                    <div class="property-footer">
+                        <a href="#contact" class="btn btn-light small">View Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="property-card" data-category="shop" data-purpose="sale" data-city="Rawalpindi" data-beds="0" data-price="55000">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Prime commercial shop in Rawalpindi" loading="lazy">
+                    <span class="property-badge">For Sale</span>
+                    <button class="favorite" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+                    <div class="image-price"><strong>PKR 55,000</strong></div>
+                </div>
+
+                <div class="property-info">
+                    <div class="property-type">Commercial Shop</div>
+                    <h3>Prime Commercial Shop</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Main Market, Rawalpindi</p>
+
+                    <div class="property-details">
+                        <span><i class="fa-solid fa-building"></i> Ground Floor</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 4 Marla</span>
+                    </div>
+
+                    <div class="property-footer">
+                        <a href="#contact" class="btn btn-light small">View Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 4 -->
+            <article class="property-card" data-category="land" data-purpose="sale" data-city="Bhakkar" data-beds="0" data-price="1800000">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Green agricultural land in Bhakkar Punjab" loading="lazy">
+                    <span class="property-badge">For Sale</span>
+                    <button class="favorite" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+                    <div class="image-price"><strong>PKR 18 Lac</strong> <span>/ Acre</span></div>
+                </div>
+
+                <div class="property-info">
+                    <div class="property-type">Agricultural Land</div>
+                    <h3>Green Agricultural Land</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Bhakkar, Punjab</p>
+
+                    <div class="property-details">
+                        <span><i class="fa-solid fa-seedling"></i> Farming Land</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 5 Acres</span>
+                    </div>
+
+                    <div class="property-footer">
+                        <a href="#contact" class="btn btn-light small">View Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 5 -->
+            <article class="property-card" data-category="house" data-purpose="rent" data-city="Rawalpindi" data-beds="3" data-price="35000">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Contemporary family home in Satellite Town" loading="lazy">
+                    <span class="property-badge rent-badge">For Rent</span>
+                    <button class="favorite" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+                    <div class="image-price"><strong>PKR 35,000</strong> <span>/ Month</span></div>
+                </div>
+
+                <div class="property-info">
+                    <div class="property-type">House</div>
+                    <h3>Contemporary Family Home</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Satellite Town, Rawalpindi</p>
+
+                    <div class="property-details">
+                        <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 5 Marla</span>
+                    </div>
+
+                    <div class="property-footer">
+                        <a href="#contact" class="btn btn-light small">View Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 6 -->
+            <article class="property-card" data-category="house" data-purpose="sale" data-city="Islamabad" data-beds="3" data-price="8500000">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="Elegant residential house in Gulberg Islamabad" loading="lazy">
+                    <span class="property-badge">For Sale</span>
+                    <button class="favorite" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+                    <div class="image-price"><strong>PKR 85 Lac</strong></div>
+                </div>
+
+                <div class="property-info">
+                    <div class="property-type">House</div>
+                    <h3>Elegant Residential House</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Gulberg, Islamabad</p>
+
+                    <div class="property-details">
+                        <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 7 Marla</span>
+                    </div>
+
+                    <div class="property-footer">
+                        <a href="#contact" class="btn btn-light small">View Details</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        
+        <p class="no-result" id="noResult" hidden>
+            No properties match your search. Try changing or clearing a filter.
+        </p>
+
+        <div class="explore-button">
+            <a href="#properties" class="btn" onclick="filterCategory('all')">Explore All Properties</a>
+        </div>
+    </div>
+</section>
+
+<!-- PROPERTY TYPES -->
+<section class="types-section">
+    <div class="section-container">
+        <div class="section-heading">
+            <h2>A place for every plan</h2>
+            <p>Choose the type of property you are looking for.</p>
+        </div>
+
+        <div class="type-grid">
+            <button type="button" class="type-card" onclick="showCategory('house')">
+                <span class="type-icon"><i class="fa-solid fa-house"></i></span>
+                <span class="type-name">Houses</span>
+                <span class="type-count">1,240 listings</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <button type="button" class="type-card" onclick="showCategory('apartment')">
+                <span class="type-icon"><i class="fa-solid fa-building"></i></span>
+                <span class="type-name">Apartments</span>
+                <span class="type-count">860 listings</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <button type="button" class="type-card" onclick="showCategory('shop')">
+                <span class="type-icon"><i class="fa-solid fa-store"></i></span>
+                <span class="type-name">Commercial</span>
+                <span class="type-count">310 listings</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <button type="button" class="type-card" onclick="showCategory('land')">
+                <span class="type-icon"><i class="fa-solid fa-expand"></i></span>
+                <span class="type-name">Plots &amp; land</span>
+                <span class="type-count">480 listings</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <button type="button" class="type-card" onclick="showCategory('land')">
+                <span class="type-icon"><i class="fa-solid fa-seedling"></i></span>
+                <span class="type-name">Agricultural</span>
+                <span class="type-count">190 listings</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="steps-section" id="about">
+    <div class="section-container">
+        <div class="section-heading">
+            <span class="section-label caps">How it works</span>
+            <h2>Find your property in 3 easy steps</h2>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <span class="step-num">01</span>
+                <h3>Search</h3>
+                <p>Use the filters to find properties by city, type, bedrooms and price.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-num">02</span>
+                <h3>Contact</h3>
+                <p>Talk to the owner or agent and ask to visit the property.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-num">03</span>
+                <h3>Move in</h3>
+                <p>Agree on the price, complete the papers and get your keys.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="story-section">
+    <div class="section-container story">
+        <div class="story-text">
+            <div class="section-heading">
+                <span class="section-label caps">Happy customers</span>
+                <h2>Trusted by our customers</h2>
+            </div>
+
+            <blockquote class="quote">
+                “EstateX made it easy to find our home. We found the right house quickly and the whole process was smooth.”
+            </blockquote>
+        </div>
+
+        <div class="story-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="White modern house with trees" loading="lazy">
+            <div class="story-stat">
+                <strong>2,500+</strong>
+                <span>homes found this year</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta-section">
+    <div class="section-container">
+        <div class="cta">
+            <div>
+                <span class="section-label caps">Have a property?</span>
+                <h2>List your property with EstateX</h2>
+                <p>Add your property and reach people who want to buy or rent.</p>
+            </div>
+
+            <a href="" class="btn">List your property <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <p>wa</p>
+    </div>
+</footer>
+
+<script src="project.js"></script>
+
+</body>
+</html>

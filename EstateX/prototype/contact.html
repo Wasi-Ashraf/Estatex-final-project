@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - EstateX</title>
+    <meta name="description" content="Contact the EstateX team to buy, rent or list a property.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+
+<!-- NAVBAR (same as the home page) -->
+<header class="navbar">
+    <div class="nav-container">
+        <a href="project.html" class="logo"><span>EX</span> EstateX</a>
+
+        <div class="nav-menu" id="navMenu">
+            <nav class="nav-links">
+                <a href="project.html">Home</a>
+                <a href="project.html">Buy</a>
+                <a href="project.html">Rent</a>
+                <a href="project.html">Properties</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="login">Sign In</a>
+                <a href="contact.html" class="btn small"><i class="fa-solid fa-plus"></i> Add Property</a>
+            </div>
+        </div>
+
+        <button class="menu-btn" id="menuBtn" onclick="menu()" aria-label="Toggle navigation menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- CONTACT -->
+<section class="contact-section page-section">
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <span class="page-label">Contact us</span>
+            <h1 class="page-title">Let’s find your way home.</h1>
+            <p class="page-text">
+                Want to buy, rent or sell a property? Send us a message and our team will help you.
+            </p>
+
+            <h3>Visit us</h3>
+            <p>Islamabad, Pakistan</p>
+
+            <h3>Call us</h3>
+            <p>+92 300 0000000</p>
+
+            <h3>Email us</h3>
+            <p>info@estatex.pk</p>
+        </div>
+
+        <!-- project.js already handles this form (shows the thank-you message) -->
+        <form class="contact-form" id="contactForm">
+            <h2 class="form-title">Send us a message</h2>
+
+            <label>Full name
+                <input type="text" class="field" placeholder="Your name" required>
+            </label>
+
+            <label>Email address
+                <input type="email" class="field" placeholder="you@email.com" required>
+            </label>
+
+            <label>How can we help?
+                <select class="field">
+                    <option>I’m looking to buy</option>
+                    <option>I’m looking to rent</option>
+                    <option>I want to list my property</option>
+                    <option>Something else</option>
+                </select>
+            </label>
+
+            <label>Message
+                <textarea class="field" rows="4" placeholder="Tell us a little more..." required></textarea>
+            </label>
+
+            <button type="submit" class="btn">Send message</button>
+            <p class="form-msg" id="formMsg" hidden>Thank you! We will contact you soon.</p>
+        </form>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+   
+</footer>
+
+<script src="project.js"></script>
+
+</body>
+</html>

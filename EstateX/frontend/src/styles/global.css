@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #172b4d;
+  background: #f5f9ff;
+}
+
+.app {
+  padding: 48px;
+}
