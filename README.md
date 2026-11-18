@@ -6,7 +6,7 @@
 **Development Completion Date:** 7 March 2027  
 **Final Submission Date:** 8 March 2027  
 **Total Duration:** 16 Weeks + 1 Submission Day  
-**Technology Stack:** MongoDB, Express.js, React.js, Node.js (MERN Stack) 
+**Technology Stack:** MongoDB, Express.js, React.js, Node.js (MERN Stack)
 **Development Approach:** Spec-Driven Development (SDD)
 
 ---
