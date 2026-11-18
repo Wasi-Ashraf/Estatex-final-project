@@ -1,4 +1,4 @@
-# ESTATEX — DEVELOPMENT ROADMAP
+# ESTATEX
 
 **Project Name:** EstateX — Real Estate & Rental Platform  
 **Project Type:** Final Year Project (DAE CIT)  
