@@ -61,7 +61,7 @@ sequenceDiagram
 - Reject non-alphanumeric search terms containing Mongo operator characters (`$`).
 
 ## 10. Security Considerations
-- IP-based rate limiting (100 requests per 15 minutes).
+- IP-based rate limiting (100 requests per 15 minutes)
 - Zero user data exposure.
 
 ## 11. Acceptance Criteria
