@@ -24,7 +24,7 @@ Always enforce the GitHub Spec Kit lifecycle:
 5. **Checklist** -> `/speckit-checklist` -> Quality gate and verification checklists
 6. **Tasks** -> `/speckit-tasks` -> Actionable, prioritized development tasks
 7. **Analyze** -> `/speckit-analyze` -> Cross-artifact consistency verification
-8. **Implementation** -> BLOCKED until explicitly approved by Wasi Ashraf.
+8. **Implementation** -> BLOCKED until explicitly approved by Wasi Ashraf
 
 ## Rule 4: Preservation of Existing Files
 - Existing files in `EstateX/` (including `EstateX/prototype/`, `EstateX/frontend/`, `EstateX/backend/`, `EstateX/DOC/`, and root files) must NEVER be deleted, destructively overwritten, or renamed without explicit user confirmation.
