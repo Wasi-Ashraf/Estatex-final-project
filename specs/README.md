@@ -24,4 +24,4 @@ This directory houses the formal module-level specifications created under GitHu
 ---
 
 ## SDD Governance Notice
-These specifications are binding blueprints. Coding may only commence once all specifications are accepted and formal implementation is authorized.
+These specifications are binding blueprints Coding may only commence once all specifications are accepted and formal implementation is authorized.
