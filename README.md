@@ -1,626 +1,218 @@
-# ESTATEX
+# ESTATEX — Real Estate & Rental Platform
 
-**Project Name:** EstateX — Real Estate & Rental Platform  
-**Project Type:** Final Year Project (DAE CIT)  
-**Development Start Date:** 18 November 2026  
-**Development Completion Date:** 7 March 2027  
-**Final Submission Date:** 8 March 2027  
-**Total Duration:** 16 Weeks + 1 Submission Day  
-**Technology Stack:** MongoDB, Express.js, React.js, Node.js (MERN Stack)  
-**Development Approach:** Spec-Driven Development (SDD)
+[![Spec-Driven Development](https://img.shields.io/badge/Methodology-Spec--Driven%20Development-blue.svg)](https://github.com/github/spec-kit)
+[![Spec Kit](https://img.shields.io/badge/Framework-GitHub%20Spec%20Kit%20v1.4.3-purple.svg)](https://github.com/github/spec-kit)
+[![Google Antigravity](https://img.shields.io/badge/Agent-Google%20Antigravity%20AGY-orange.svg)](https://antigravity.google)
+[![Architecture](https://img.shields.io/badge/Architecture-3--Tier%20MERN-green.svg)](#technology-stack)
+[![Project Status](https://img.shields.io/badge/Status-Specification%20%26%20Architecture%20Phase-yellow.svg)](#current-project-status--authorization-boundary)
 
 ---
 
-# 1. PROJECT OVERVIEW
+## Academic Project Information
 
-EstateX is a modern real estate and rental platform designed to connect property buyers, renters, sellers, and property owners through a single platform.
-
-The platform will support residential, commercial, and agricultural property listings, including:
-
-- Houses
-- Apartments
-- Shops
-- Commercial Properties
-- Residential Plots
-- Agricultural Land
-
-Users will be able to explore, search, filter, and save properties. Sellers will be able to publish and manage property listings, while administrators will manage users, listings, and platform activities.
-
-## Main Project Objectives
-
-1. Develop a professional real estate platform.
-2. Provide property buying and rental facilities.
-3. Support multiple property categories.
-4. Implement secure user authentication.
-5. Provide separate user, seller, and admin dashboards.
-6. Develop advanced search and filtering.
-7. Implement property inquiry and communication features.
-8. Build a responsive and user-friendly interface.
-9. Deploy a functional web application.
+- **Project Name:** EstateX — Real Estate & Rental Platform
+- **Student Developer:** Wasi Ashraf
+- **Academic Institution:** Government College of Technology (GCT) Bhakkar, Punjab, Pakistan
+- **Department:** Computer Information Technology (CIT)
+- **Project Classification:** DAE CIT Final Year Capstone Project
+- **Academic Session:** 2026–2027
+- **Development Baseline Date:** 18 November 2026
+- **Target Submission Date:** 8 March 2027
+- **Project Location:** `D:\estatex`
+- **Lead Methodology:** Spec-Driven Development (SDD) via GitHub Spec Kit & Google Antigravity
 
 ---
 
-# 2. DEVELOPMENT STRATEGY
+## Current Project Status & Authorization Boundary
 
-The complete development process is divided into five major stages.
-
-| Stage | Weeks | Development Focus |
-|---|---|---|
-| Stage 1 | Week 01–03 | Foundation, Requirements & UI/UX |
-| Stage 2 | Week 04–07 | Backend, Database & Authentication |
-| Stage 3 | Week 08–11 | Main Platform Features |
-| Stage 4 | Week 12–14 | Advanced Features & Optimization |
-| Stage 5 | Week 15–16 | Testing, Deployment & Documentation |
+> [!IMPORTANT]
+> **CURRENT STAGE: SPECIFICATION, ARCHITECTURE & PLANNING COMPLETED.**  
+> **CODE IMPLEMENTATION AUTHORIZATION: HELD.**  
+> In accordance with the [Project Constitution](file:///D:/estatex/.specify/memory/constitution.md), all architectural designs, specifications, database schemas, API contracts, and task breakdowns are established. **No application coding, React component implementation, Express routing, or npm package installation is authorized until formal user sign-off.**
 
 ---
 
-# 3. WEEK-BY-WEEK DEVELOPMENT PLAN
-
-## STAGE 1 — FOUNDATION & ARCHITECTURE
-
-### WEEK 01 — Project Foundation & Existing Work Review
-**Duration:** 18 November – 22 November 2026
-
-**Goal:** Organize the project and review previously completed work.
-
-**Tasks:**
-- Review existing EstateX development.
-- Identify completed and pending tasks.
-- Finalize project folder structure.
-- Organize Frontend, Backend, DOC, and Prototype.
-- Configure GitHub repository.
-- Configure .gitignore.
-- Update the main README.
-- Finalize project requirements.
-
-**Deliverables:**
-- Organized project structure.
-- Updated README.
-- Project status report.
-- Requirements document.
-- GitHub repository.
-
-### WEEK 02 — Software Requirements & System Architecture
-**Duration:** 23 November – 29 November 2026
-
-**Goal:** Define the complete system architecture before major development.
-
-**Tasks:**
-- Define functional requirements.
-- Define non-functional requirements.
-- Identify user roles and permissions.
-- Define Visitor, User, Seller, and Admin workflows.
-- Prepare system architecture diagram.
-- Define frontend and backend communication.
-- Plan database architecture.
-- Plan API endpoints.
-- Define security requirements.
-
-**Deliverables:**
-- Software Requirements Specification (SRS).
-- System architecture diagram.
-- User flow diagrams.
-- Database planning document.
-- API planning document.
-
-### WEEK 03 — UI/UX Design & Frontend Foundation
-**Duration:** 30 November – 6 December 2026
-
-**Goal:** Design the professional interface and establish the frontend foundation.
-
-**Tasks:**
-- Finalize color scheme and typography.
-- Design Navbar and Footer.
-- Design Homepage.
-- Design Property Listing Page.
-- Design Property Details Page.
-- Design Login and Signup Pages.
-- Design User Dashboard.
-- Design Seller Dashboard.
-- Design Admin Dashboard.
-- Plan responsive layouts.
-- Configure React frontend.
-
-**Deliverables:**
-- UI/UX documentation.
-- Homepage foundation.
-- Reusable React components.
-- React routing foundation.
-- Responsive layout foundation.
-
----
-
-## STAGE 2 — CORE DEVELOPMENT
-
-### WEEK 04 — Backend & Server Development
-**Duration:** 7 December – 13 December 2026
-
-**Goal:** Establish the backend architecture and server.
-
-**Tasks:**
-- Configure Node.js project.
-- Set up Express.js server.
-- Connect MongoDB.
-- Configure environment variables.
-- Set up middleware.
-- Implement error handling.
-- Organize routes and controllers.
-- Organize services and utilities.
-- Create health check API.
-- Test backend server.
-
-**Deliverables:**
-- Working Express server.
-- MongoDB connection.
-- Organized backend structure.
-- Initial API endpoints.
-
-### WEEK 05 — Database Design & Models
-**Duration:** 14 December – 20 December 2026
-
-**Goal:** Design and implement the database structure.
-
-**Tasks:**
-- Create User model.
-- Create Property model.
-- Create Category model.
-- Create Inquiry model.
-- Create Favorite model.
-- Create Review model if required.
-- Define property image structure.
-- Define user roles.
-- Establish database relationships.
-- Implement schema validation.
-
-**Deliverables:**
-- MongoDB database structure.
-- Mongoose models.
-- Schema validation.
-- Database documentation.
-
-### WEEK 06 — Authentication & Authorization
-**Duration:** 21 December – 27 December 2026
-
-**Goal:** Develop a secure user authentication system.
-
-**Tasks:**
-- Implement user registration.
-- Implement user login.
-- Hash passwords using bcrypt.
-- Implement JWT authentication.
-- Create authentication middleware.
-- Implement role-based authorization.
-- Create user profile API.
-- Implement logout functionality.
-- Protect private routes.
-- Integrate Login and Signup frontend.
-
-**Deliverables:**
-- Working Signup and Login.
-- Secure password storage.
-- JWT authentication.
-- Role-based access control.
-
-### WEEK 07 — Property Management System
-**Duration:** 28 December 2026 – 3 January 2027
-
-**Goal:** Allow sellers to add and manage property listings.
-
-**Tasks:**
-- Develop Add Property form.
-- Implement property categories.
-- Support houses, apartments, shops, plots, and agricultural land.
-- Implement Sale and Rent options.
-- Add property title and description.
-- Add price and location fields.
-- Implement property image upload.
-- Implement Edit Property.
-- Implement Delete Property.
-- Develop Seller Property Dashboard.
-- Integrate frontend and backend.
-
-**Deliverables:**
-- Add Property functionality.
-- Edit and Delete functionality.
-- Property database integration.
-- Seller property management.
-
----
-
-## STAGE 3 — MAIN PLATFORM FEATURES
-
-### WEEK 08 — Public Homepage & Property Listings
-**Duration:** 4 January – 10 January 2027
-
-**Goal:** Develop the public property browsing experience.
-
-**Tasks:**
-- Integrate homepage.
-- Display dynamic property cards.
-- Implement featured properties.
-- Display latest properties.
-- Develop property listing page.
-- Develop property details page.
-- Implement property image gallery.
-- Display complete property information.
-- Add loading and error states.
-- Integrate backend APIs.
-
-**Deliverables:**
-- Functional homepage.
-- Dynamic property listings.
-- Property details system.
-
-### WEEK 09 — Search & Advanced Filters
-**Duration:** 11 January – 17 January 2027
-
-**Goal:** Allow users to find properties easily.
-
-**Tasks:**
-- Search by location.
-- Search by property title.
-- Filter by price.
-- Filter by property category.
-- Filter by Sale and Rent.
-- Filter by bedrooms.
-- Filter by property size.
-- Implement sorting.
-- Implement pagination.
-- Handle empty search results.
-
-**Deliverables:**
-- Working search system.
-- Advanced filtering.
-- Sorting and pagination.
-
-### WEEK 10 — User Dashboard & Favorites
-**Duration:** 18 January – 24 January 2027
-
-**Goal:** Develop personalized user account features.
-
-**Tasks:**
-- Develop User Dashboard.
-- Display user profile.
-- Implement Edit Profile.
-- Add Favorite Properties.
-- Remove Favorite Properties.
-- Display Saved Properties.
-- Display inquiry history.
-- Add dashboard statistics.
-- Protect dashboard routes.
-
-**Deliverables:**
-- User Dashboard.
-- Favorites system.
-- Profile management.
-- Inquiry history.
-
-### WEEK 11 — Inquiry & Communication System
-**Duration:** 25 January – 31 January 2027
-
-**Goal:** Establish communication between buyers/renters and sellers.
-
-**Tasks:**
-- Develop Property Inquiry Form.
-- Send inquiries to sellers.
-- Store inquiries in database.
-- Develop Seller Inquiry Dashboard.
-- Display inquiry details.
-- Implement inquiry status management.
-- Implement Contact Seller functionality.
-- Add form validation.
-- Integrate inquiry APIs.
-
-**Deliverables:**
-- Working inquiry system.
-- Seller inquiry dashboard.
-- Inquiry management functionality.
-
----
-
-## STAGE 4 — ADVANCED DEVELOPMENT
-
-### WEEK 12 — Admin Dashboard & Management
-**Duration:** 1 February – 7 February 2027
-
-**Goal:** Allow administrators to manage the platform.
-
-**Tasks:**
-- Implement admin authentication.
-- Protect admin routes.
-- Develop Admin Dashboard.
-- Implement user management.
-- Implement seller management.
-- Implement property management.
-- Approve or reject property listings.
-- Remove inappropriate listings.
-- Manage reported properties.
-- Display dashboard statistics.
-
-**Deliverables:**
-- Admin Dashboard.
-- User management system.
-- Property moderation system.
-
-### WEEK 13 — Security & Notifications
-**Duration:** 8 February – 14 February 2027
-
-**Goal:** Improve platform security and user experience.
-
-**Tasks:**
-- Improve API security.
-- Implement input validation.
-- Configure rate limiting.
-- Implement secure error handling.
-- Test role permissions.
-- Develop notification system.
-- Add new inquiry notifications.
-- Add property approval notifications.
-- Add account-related notifications.
-- Review authentication security.
-
-**Deliverables:**
-- Improved application security.
-- Notification functionality.
-- Security testing report.
-
-### WEEK 14 — Advanced Features & Optimization
-**Duration:** 15 February – 21 February 2027
-
-**Goal:** Improve performance, responsiveness, and overall quality.
-
-**Tasks:**
-- Optimize property images.
-- Improve responsive layouts.
-- Improve loading performance.
-- Optimize API responses.
-- Optimize database queries.
-- Implement basic SEO.
-- Improve empty states.
-- Create error pages.
-- Implement Light and Dark Mode if time permits.
-- Improve UI animations and styling.
-
-**Deliverables:**
-- Optimized frontend.
-- Improved backend performance.
-- Responsive interface.
-- SEO foundation.
-
----
-
-## STAGE 5 — TESTING & FINALIZATION
-
-### WEEK 15 — Complete Integration & Quality Testing
-**Duration:** 22 February – 28 February 2027
-
-**Goal:** Test the complete application and resolve bugs.
-
-**Tasks:**
-- Perform frontend/backend integration testing.
-- Test authentication.
-- Test property management.
-- Test search and filters.
-- Test user dashboard.
-- Test seller dashboard.
-- Test inquiry system.
-- Test admin functionality.
-- Test role-based access.
-- Test form validation.
-- Perform responsive testing.
-- Fix identified bugs.
-
-**Deliverables:**
-- Complete testing report.
-- Fixed critical bugs.
-- Integrated working application.
-- Final feature verification.
-
-### WEEK 16 — Deployment & Final Documentation
-**Duration:** 1 March – 7 March 2027
-
-**Goal:** Deploy EstateX and prepare the final project documentation.
-
-**Tasks:**
-- Configure production environment.
-- Deploy frontend.
-- Deploy backend.
-- Configure production MongoDB.
-- Configure environment variables.
-- Test deployed application.
-- Finalize README.
-- Prepare installation instructions.
-- Prepare user guide.
-- Complete developer documentation.
-- Capture project screenshots.
-- Prepare project presentation.
-- Update GitHub repository.
-- Create final project backup.
-
-**Deliverables:**
-- Deployed EstateX application.
-- Updated GitHub repository.
-- Complete documentation.
-- User guide.
-- Final presentation.
-
----
-
-# 4. FINAL SUBMISSION
-
-**Submission Date:** 8 March 2027
-
-## Final Submission Checklist
-
-- [ ] Project fully functional.
-- [ ] Frontend and backend connected.
-- [ ] Database working.
-- [ ] Authentication working.
-- [ ] User, Seller, and Admin roles working.
-- [ ] Property management working.
-- [ ] Search and filters working.
-- [ ] User dashboard working.
-- [ ] Seller dashboard working.
-- [ ] Admin dashboard working.
-- [ ] Inquiry system working.
-- [ ] Security checks completed.
-- [ ] Testing completed.
-- [ ] Deployment completed.
-- [ ] README completed.
-- [ ] Documentation completed.
-- [ ] Presentation ready.
-
----
-
-# 5. DAILY DEVELOPMENT WORKFLOW
-
-Each week will follow a six-day development schedule with one review day.
-
-| Day | Activities |
-|---|---|
-| Monday | Weekly requirements and specifications |
-| Tuesday | Planning and task breakdown |
-| Wednesday | Main development |
-| Thursday | Development continuation |
-| Friday | Integration and testing |
-| Saturday | Bug fixing and documentation |
-| Sunday | Weekly review and next-week planning |
-
-Sunday will primarily be used for reviewing progress and planning upcoming tasks.
-
----
-
-# 6. SPEC-DRIVEN DEVELOPMENT (SDD) WORKFLOW
-
-Every major EstateX feature will follow this development process:
-
-1. **Specification:** Define what the feature should do.
-2. **Clarification:** Identify missing or unclear requirements.
-3. **Planning:** Decide how the feature will be developed.
-4. **Task Breakdown:** Divide the feature into smaller tasks.
-5. **Implementation:** Write and integrate the code.
-6. **Testing:** Verify the feature's functionality.
-7. **Review:** Check code quality and functionality.
-8. **Completion:** Update documentation and close the task.
-
-### Example: Add Property Feature
-
-- Specification: Sellers can add new properties.
-- Planning: Define form, API, model, and validation.
-- Implementation: Develop frontend and backend.
-- Testing: Verify that property data is saved correctly.
-- Review: Check validation and error handling.
-- Completion: Update the task status.
-
----
-
-# 7. DOCUMENTATION STRUCTURE
-
-All project documentation will be maintained inside the DOC folder.
-
-```text
-DOC/
-│
-├── Daily Tasks/
-│   ├── DAILY-TASK-TEMPLATE.md
-│   ├── 2026-11-18.md
-│   ├── 2026-11-19.md
-│   └── ...
-│
-├── Weekly Modules/
-│   ├── WEEKLY-MODULE-TEMPLATE.md
-│   ├── WEEK-01.md
-│   ├── WEEK-02.md
-│   ├── WEEK-03.md
-│   └── ...
-│
-└── Project Planning/
-    ├── PROJECT-OVERVIEW.md
-    ├── MASTER-ROADMAP.md
-    ├── SDD-WORKFLOW.md
-    ├── REQUIREMENTS.md
-    └── PROJECT-PROGRESS.md
+## Master Documentation Directory Navigation
+
+All specifications and system designs are structured into specialized directories:
+
+```
+D:\estatex\
+├── .agents/                    # Google Antigravity skills and project rules
+├── .specify/                   # GitHub Spec Kit framework, templates & Constitution
+├── docs/                       # Complete system documentation package
+│   ├── INDEX.md                # Master Documentation Index
+│   ├── 01-project-overview/    # Project Charter & Proposal Alignment
+│   ├── 02-requirements/        # Functional & Non-Functional Requirements, RBAC
+│   ├── 03-planning/            # 16-Week Roadmap & SDD Methodology Guide
+│   ├── 04-architecture/        # 3-Tier Architecture, Frontend & Backend Specs
+│   ├── 05-design/              # Design System Tokens & Wireframe Specs
+│   ├── 06-database/            # MongoDB Schema Design & ERD
+│   ├── 07-api/                 # RESTful API Specifications
+│   ├── 08-security/            # Security Architecture & OWASP Top 10
+│   ├── 09-testing/             # Testing Pyramid Strategy & Acceptance Gates
+│   ├── 10-deployment/          # Deployment Topology & Environment Config
+│   └── 11-project-reports/     # QA Consistency Audit & Academic Viva Summary
+├── specs/                      # Module-wise Spec Kit specifications
+│   └── modules/                # MOD-01 to MOD-13 module specifications
+├── frontend/                   # React.js + Vite presentation layer documentation
+├── backend/                    # Node.js + Express.js backend layer documentation
+├── database/                   # MongoDB schemas and test seeders
+├── testing/                    # Unit, Integration, and E2E test harness
+├── deployment/                 # Docker blueprints and environment configs
+├── project-management/         # RTM, WBS task breakdown, and milestones
+└── EstateX/                    # Preserved historical codebase, prototype & docs
 ```
 
-## Daily Task Documentation
-
-Every daily task file will contain:
-
-- Today's Objectives
-- Tasks Completed
-- Tasks Pending
-- Problems Faced
-- Solutions
-- Tomorrow's Plan
-
-## Weekly Module Documentation
-
-Every weekly module will contain:
-
-- Weekly Goal
-- Requirements
-- Development Tasks
-- Testing Tasks
-- Deliverables
-- Completion Status
+### Primary Documentation Links
+- 📘 [Master Documentation Index](file:///D:/estatex/docs/INDEX.md)
+- 📜 [EstateX Project Constitution](file:///D:/estatex/.specify/memory/constitution.md)
+- 🛡️ [Antigravity Agent Rules](file:///D:/estatex/.agents/rules/project-rules.md)
+- 📋 [Functional Requirements Specification](file:///D:/estatex/docs/02-requirements/functional-requirements.md)
+- 🏛️ [High-Level System Architecture](file:///D:/estatex/docs/04-architecture/system-architecture.md)
+- 💾 [Database Schema Design & ERD](file:///D:/estatex/docs/06-database/database-schema-design.md)
+- 🔌 [RESTful API Specification](file:///D:/estatex/docs/07-api/api-specification.md)
+- 🔗 [Requirements Traceability Matrix (RTM)](file:///D:/estatex/project-management/traceability/requirements-traceability-matrix.md)
+- 📝 [Development Task Breakdown (WBS)](file:///D:/estatex/project-management/tasks/development-task-breakdown.md)
+- 🔍 [Quality Assurance & Consistency Report](file:///D:/estatex/docs/11-project-reports/quality-assurance-report.md)
 
 ---
 
-# 8. PROJECT DEVELOPMENT RULES
+## 1. Project Overview & Scope
 
-1. Never start major coding without proper planning.
-2. Every major feature must have a specification.
-3. Develop one major feature at a time.
-4. Test every feature after implementation.
-5. Avoid unnecessary changes to working code.
-6. Commit code regularly to GitHub.
-7. Update documentation every week.
-8. Carry pending tasks into the next weekly plan.
-9. Implement security and validation throughout development.
-10. Perform complete integration testing before submission.
+EstateX is a modern, verified real estate discovery and listing management platform built specifically for the Pakistani property market. It addresses fragmented classifieds, unstandardized pricing, and chaotic buyer-seller communication by delivering a unified, reliable platform.
 
----
+### Approved Property Scope (Pakistan Domain)
+1. **Houses** — Single/double story residences, portions, villas.
+2. **Apartments** — Flats, studio units, residential complexes.
+3. **Commercial Shops** — Retail outlets, main bazaar shops, commercial plazas.
+4. **Residential Plots** — Developed plots, files, scheme allotments.
+5. **Agricultural Land** — Farmland acreage, tubewell and canal water shares.
 
-# 9. WEEKLY PROGRESS TRACKING
+### Transaction Purposes Supported
+- **For Sale** (Buying and Selling)
+- **For Rent** (Rental leasing)
 
-| Week | Module | Status |
-|---|---|---|
-| Week 01 | Project Foundation | Not Started |
-| Week 02 | Requirements & Architecture | Not Started |
-| Week 03 | UI/UX & Frontend Foundation | Not Started |
-| Week 04 | Backend & Server | Not Started |
-| Week 05 | Database & Models | Not Started |
-| Week 06 | Authentication | Not Started |
-| Week 07 | Property Management | Not Started |
-| Week 08 | Homepage & Listings | Not Started |
-| Week 09 | Search & Filters | Not Started |
-| Week 10 | User Dashboard & Favorites | Not Started |
-| Week 11 | Inquiry System | Not Started |
-| Week 12 | Admin Dashboard | Not Started |
-| Week 13 | Security & Notifications | Not Started |
-| Week 14 | Advanced Features & Optimization | Not Started |
-| Week 15 | Integration & Testing | Not Started |
-| Week 16 | Deployment & Documentation | Not Started |
-
-**Status Options:**
-- Not Started
-- In Progress
-- Partially Completed
-- Completed
-- Delayed
+### Platform Roles & Personas
+- **Visitor (Public):** Browse properties, filter by city/price, view specs and galleries.
+- **Buyer / Renter (`user`):** Save favorite properties, submit inquiries, view contact history.
+- **Seller / Property Owner (`seller`):** Publish listings, manage availability (`Active`, `Sold`, `Rented`), review leads inbox.
+- **Administrator (`admin`):** Review and moderate listings, approve/reject submissions, govern user accounts, monitor KPIs.
 
 ---
 
-# 10. PROJECT COMPLETION TARGET
+## 2. Technology Stack
 
-By 8 March 2027, EstateX should be a functional, tested, documented, and deployed real estate and rental platform.
-
-The main objective is not simply to complete the coding. The objective is to develop a reliable software product using a structured development process, proper documentation, continuous testing, and professional project management.
-
-**PROJECT MOTTO:**
-
-> Plan Carefully. Build Systematically. Test Continuously. Deliver Professionally.
+| Layer | Technology | Version | Purpose |
+|---|---|---|---|
+| **Frontend** | React.js | v18.x | Declarative Single Page Application (SPA) |
+| **Tooling & Bundler** | Vite | v5.x | Ultra-fast local development and production bundle compilation |
+| **Markup & Styling** | HTML5, CSS3 | Standard | Mobile-first responsive layouts, CSS design tokens |
+| **Backend Runtime** | Node.js | v20+ (LTS) | High-performance asynchronous JavaScript engine |
+| **API Framework** | Express.js | v4.x | RESTful API routing, middleware pipeline, security headers |
+| **Database** | MongoDB | v7.x | Scalable document-oriented NoSQL persistence |
+| **ODM Layer** | Mongoose | v8.x | Schema validation, business modeling, relational population |
+| **Authentication** | JWT & bcrypt | Standard | Stateless token sessions, salted password hashing |
+| **Validation** | Zod | v3.x | Strict runtime schema parsing and sanitization |
+| **SDD Framework** | GitHub Spec Kit | v1.4.3 | Spec-Driven Development framework |
+| **AI Partner** | Google Antigravity | v1.5+ | Agentic assistant, skills runner, SDD orchestrator |
 
 ---
 
-**END OF MASTER DEVELOPMENT ROADMAP**
+## 3. Spec-Driven Development (SDD) Workflow
+
+EstateX enforces the official GitHub Spec Kit lifecycle:
+
+```mermaid
+flowchart LR
+    S1[1. Constitution] --> S2[2. Specify]
+    S2 --> S3[3. Clarify]
+    S3 --> S4[4. Plan]
+    S4 --> S5[5. Checklist]
+    S5 --> S6[6. Tasks]
+    S6 --> S7[7. Analyze]
+    S7 --> S8{Approval Gate}
+    S8 -- User Authorization Required --> S9[8. Implementation]
+```
+
+1. **Constitution:** Ratified binding charter in `.specify/memory/constitution.md`.
+2. **Specify:** Comprehensive feature specification in `specs/modules/<module>/spec.md`.
+3. **Clarify:** De-risking edge cases and requirements before planning.
+4. **Plan:** Architectural blueprints, database schemas, and API contracts.
+5. **Checklist:** Verification checklist ensuring complete acceptance criteria.
+6. **Tasks:** Work Breakdown Structure (WBS) with dependencies and hours in `project-management/tasks/`.
+7. **Analyze:** Cross-artifact consistency audit in `docs/11-project-reports/quality-assurance-report.md`.
+8. **Implementation:** Strictly prohibited until explicit user approval is granted.
+
+---
+
+## 4. Master 16-Week Development Roadmap
+
+```mermaid
+gantt
+    title EstateX Development Schedule (Nov 2026 - Mar 2027)
+    dateFormat  YYYY-MM-DD
+    section Stage 1: Foundation
+    Repository & SDD Setup (W1)     :done, w1, 2026-11-18, 2026-11-22
+    SRS & Architecture (W2)         :active, w2, 2026-11-23, 2026-11-29
+    UI/UX Design Foundation (W3)    :w3, 2026-11-30, 2026-12-06
+    section Stage 2: Core Backend
+    Express Server & Config (W4)    :w4, 2026-12-07, 2026-12-13
+    Database Models & Mongoose (W5) :w5, 2026-12-14, 2026-12-20
+    JWT Auth & RBAC (W6)            :w6, 2026-12-21, 2026-12-27
+    Property Management CRUD (W7)   :w7, 2026-12-28, 2027-01-03
+    section Stage 3: Features
+    Public Browsing & Listings (W8) :w8, 2027-01-04, 2027-01-10
+    Advanced Search & Filters (W9)  :w9, 2027-01-11, 2027-01-17
+    User Dashboard & Favorites (W10):w10, 2027-01-18, 2027-01-24
+    Inquiry Lead System (W11)       :w11, 2027-01-25, 2027-01-31
+    section Stage 4: Admin & Hardening
+    Admin Moderation Portal (W12)   :w12, 2027-02-01, 2027-02-07
+    Security & Validation Audit (W13):w13, 2027-02-08, 2027-02-14
+    Performance & Mobile Polish (W14):w14, 2027-02-15, 2027-02-21
+    section Stage 5: Finalization
+    Full Testing & QA (W15)         :w15, 2027-02-22, 2027-02-28
+    Documentation & Viva Prep (W16) :w16, 2027-03-01, 2027-03-07
+    Final Project Submission        :milestone, sub, 2027-03-08, 1d
+```
+
+---
+
+## 5. Module Inventory (All 13 Modules Specified)
+
+| Module ID | Module Name | Primary Role | Specification Path |
+|---|---|---|---|
+| **MOD-01** | Visitor Module | Visitor | [`specs/modules/01-visitor/spec.md`](file:///D:/estatex/specs/modules/01-visitor/spec.md) |
+| **MOD-02** | Authentication Module | All Roles | [`specs/modules/02-auth/spec.md`](file:///D:/estatex/specs/modules/02-auth/spec.md) |
+| **MOD-03** | Buyer / User Module | Buyer | [`specs/modules/03-buyer-user/spec.md`](file:///D:/estatex/specs/modules/03-buyer-user/spec.md) |
+| **MOD-04** | Seller Module | Seller | [`specs/modules/04-seller/spec.md`](file:///D:/estatex/specs/modules/04-seller/spec.md) |
+| **MOD-05** | Admin Moderation Module | Admin | [`specs/modules/05-admin/spec.md`](file:///D:/estatex/specs/modules/05-admin/spec.md) |
+| **MOD-06** | Property Listing Module | Seller/Admin | [`specs/modules/06-property-listing/spec.md`](file:///D:/estatex/specs/modules/06-property-listing/spec.md) |
+| **MOD-07** | Property Search & Filter Module | All Roles | [`specs/modules/07-property-search-filter/spec.md`](file:///D:/estatex/specs/modules/07-property-search-filter/spec.md) |
+| **MOD-08** | Property Details Module | All Roles | [`specs/modules/08-property-details/spec.md`](file:///D:/estatex/specs/modules/08-property-details/spec.md) |
+| **MOD-09** | Favorites Module | Buyer/Seller | [`specs/modules/09-favorites/spec.md`](file:///D:/estatex/specs/modules/09-favorites/spec.md) |
+| **MOD-10** | Inquiry Module | Buyer/Seller | [`specs/modules/10-inquiry/spec.md`](file:///D:/estatex/specs/modules/10-inquiry/spec.md) |
+| **MOD-11** | Property Image Management | Seller/Admin | [`specs/modules/11-image-management/spec.md`](file:///D:/estatex/specs/modules/11-image-management/spec.md) |
+| **MOD-12** | Property Location Management | All Roles | [`specs/modules/12-location-management/spec.md`](file:///D:/estatex/specs/modules/12-location-management/spec.md) |
+| **MOD-13** | Role-Specific Dashboards | All Auth Roles | [`specs/modules/13-dashboards/spec.md`](file:///D:/estatex/specs/modules/13-dashboards/spec.md) |
+
+---
+
+## 6. Preserved Historical Assets
+
+The previous development foundation and prototype assets are preserved intact in `EstateX/`:
+- `EstateX/prototype/` — Interactive static prototype (`project.html`, `project.css`, `project.js`, `about.html`, `contact.html`).
+- `EstateX/frontend/` — Preliminary Vite scaffolding.
+- `EstateX/backend/` — Preliminary Node/Express server skeleton.
+- `EstateX/DOC/` — Previous daily logs, weekly modules, and initial roadmaps.
+
+---
+
+## 7. Project Motto
+
+> **Plan Carefully. Specify Completely. Build Systematically. Test Continuously. Deliver Professionally.**
+
+---
+**Senior SDD Lead & CIT Final Year Student:** Wasi Ashraf  
+**Academic Institution:** Government College of Technology (GCT) Bhakkar, Pakistan  
+**Repository Working Directory:** `D:\estatex`

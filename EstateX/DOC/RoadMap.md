@@ -102,9 +102,9 @@ The complete development process is divided into five major stages.
 - User flow diagrams.
 - Database planning document.
 - API planning document.
-
-### WEEK 03 — UI/UX Design & Frontend Foundation
-**Duration:** 30 November – 6 December 2026
+ 
+### WEEK 03 — UI/UX Design & Frontend Foundation  
+**Duration:** 30 November – 6 December 2026 
 
 **Goal:** Design the professional interface and establish the frontend foundation.
 
