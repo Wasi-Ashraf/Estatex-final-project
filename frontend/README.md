@@ -14,7 +14,7 @@ The `frontend/` directory contains the modern React.js Single Page Application (
 See [Frontend Architecture Specification](file:///D:/estatex/docs/04-architecture/frontend-architecture.md) for full details on component hierarchy, routing, context providers, and design tokens.
 
 ## Historical Preservation Note
-The initial Vite prototype and scaffold files in `EstateX/frontend/` and `EstateX/prototype/` are preserved as baselines for layout patterns and user flow testing.
+The initial Vite prototype and scaffold files in `EstateX/frontend/` and `EstateX/prototype/` are preserved as baselines for layout patterns and user flow testing
 
 ## Current Status
 - **Phase:** Specification & Architecture Baseline.
