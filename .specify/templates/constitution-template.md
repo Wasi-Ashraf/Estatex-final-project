@@ -35,7 +35,7 @@
 <!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
 
 ## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+<!-- Example: Development Workflow Review Process, Quality Gates, etc. -->
 
 [SECTION_3_CONTENT]
 <!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
