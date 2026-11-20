@@ -64,7 +64,7 @@ sequenceDiagram
 
 ## 11. Acceptance Criteria
 - [ ] Seller can successfully post a property listing with up to 10 photos.
-- [ ] Seller dashboard displays active listings count, pending approval count, and inquiry count.
+- [ ] Seller dashboard displays active listings count, pending approval count, and inquiry count
 - [ ] Seller can mark a property as `Sold` with immediate status update.
 
 ## 12. Testing Strategy
