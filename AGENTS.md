@@ -8,7 +8,8 @@ Welcome to the **EstateX** repository. This project is managed using **Spec-Driv
 - **Institute:** Government College of Technology (GCT) Bhakkar, Pakistan
 - **Degree:** DAE CIT Final Year Project
 - **Baseline Location:** `D:\estatex`
-- **Methodology:** Spec-Driven Development (SDD)
+- **Methodology:** Spec-Driven Development
+  - (SDD)
 
 ## Core Agent Rules
 All agents operating in this workspace must strictly follow the rules declared in:
