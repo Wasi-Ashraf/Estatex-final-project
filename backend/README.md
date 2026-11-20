@@ -19,4 +19,4 @@ The initial Express structure in `EstateX/backend/` is preserved as a reference 
 
 ## Current Status
 - **Phase:** Specification & Architecture Baseline.
-- **Rule:** No Express code, controllers, routes, or backend npm packages are installed until implementation approval.
+- **Rule:** No Express code, controllers, routes,  backend npm packages are installed until implementation approval.
